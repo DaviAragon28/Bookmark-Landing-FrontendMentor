@@ -1,0 +1,10 @@
+---
+    const { question, answer } = Astro.props
+---
+
+<details class="border-b-2 text-grayishBlue flex justify-between pb-4 items-center">
+    <summary class=" hover:text-softRed cursor-pointer transition-all text-lg text-veryDarkBlue font-semibold mb-2">
+        {question}
+    </summary>
+    {answer}
+</details>

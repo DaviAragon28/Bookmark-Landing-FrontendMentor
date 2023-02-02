@@ -1,0 +1,16 @@
+---
+import { Features } from "./Features";
+
+---
+
+<section id="features" class="mt-32 flex pt-10 flex-col gap-10 lg:mx-10">
+    <div class="flex flex-col gap-5">
+        <h2 class="text-3xl font-semibold text-center md:text-4xl ">Features</h2>
+        <p class="text-grayishBlue text-lg text-center max-w-lg px-5 mx-auto md:">
+            Our aim is to make it quick and easy for you to access your favourite
+            websites. Your bookmarks sync between your devices so you can access
+            them on the go.
+        </p>
+    </div>
+    <Features client:load />
+</section>

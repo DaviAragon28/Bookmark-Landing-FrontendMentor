@@ -1,0 +1,37 @@
+---
+const { href, title, body } = Astro.props;
+---
+
+<section class="flex flex-col gap-9 mt-20 lg:flex-row-reverse lg:m-10 lg:mt-20 lg:items-center lg:justify-around">
+	<div class="relative">
+		<img
+			class="relative z-20 md:w-[450px] md:mx-auto lg:w-[450px] xl:w-[650px]"
+			src="/images/illustration-hero.svg"
+			alt="illustration-hero"
+		/>
+		<div
+			class="absolute bottom-0 right-0 rounded-l-full lg:hidden z-10 h-44 w-72 lg:h-52 lg:w-96 bg-softBlue"
+		>
+		</div>
+	</div>
+	<div class="flex flex-col gap-4 ">
+		<h1 class="text-3xl mx-4 font-semibold text-center md:text-4xl lg:pr-10 lg:m-0 lg:text-left xl:text-5xl xl:w-[600px]">
+			A Simple Bookmark Manager
+		</h1>
+		<p class="text-grayishBlue text-lg text-center max-w-lg px-3 mx-auto lg:text-left lg:p-0 lg:mx-0">
+			A clean and simple interface to organize your favourite websites.
+			Open a new browser tab and see your sites load instantly. Try it for
+			free.
+		</p>
+		<div class="flex gap-4 justify-center lg:justify-start">
+			<button
+				class="p-3 bg-softBlue rounded-md font-semibold text-white transition-colors hover:text-softBlue border-2 border-softBlue hover:bg-white"
+				>Get it on Chrome</button
+			>
+			<button
+				class="p-3 rounded-md shadow-md text-veryDarkBlue font-semibold transition-colors hover:text-veryDarkBlue border-2 hover:border-veryDarkBlue"
+				>Get it on Firefox</button
+			>
+		</div>
+	</div>
+</section>

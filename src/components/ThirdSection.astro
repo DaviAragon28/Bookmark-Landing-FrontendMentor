@@ -1,0 +1,21 @@
+---
+import Card from "./Card.astro";
+---
+
+<section class="mt-24 flex flex-col gap-28">
+    <div class="flex flex-col gap-5">
+        <p class="text-center text-veryDarkBlue font-semibold text-3xl md:text-4xl">
+            Download the extension
+        </p>
+        <p class="text-grayishBlue text-lg text-center max-w-lg px-5 mx-auto">
+            We’ve got more browsers in the pipeline. Please do let us know if
+            you’ve got a favourite you’d like us to prioritize.
+        </p>
+    </div>
+
+    <div class="flex flex-wrap gap-14 justify-center xl:gap-24">
+        <Card image="/images/logo-chrome.svg" browser="Chrome" version="62" />
+        <Card margin={2} image="/images/logo-firefox.svg" browser="Firefox" version="55" />
+        <Card margin={3} image="/images/logo-opera.svg" browser="Opera" version="46" />
+    </div>
+</section>

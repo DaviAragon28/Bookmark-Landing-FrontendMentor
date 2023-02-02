@@ -1,0 +1,22 @@
+---
+import Contact from '../components/Contact.astro';
+import FirstSection from '../components/FirstSection.astro';
+import Footer from '../components/Footer.astro';
+import FourthSection from '../components/FourthSection.astro';
+import { Header } from '../components/Header';
+import { Menu } from '../components/Menu';
+import SecondSection from '../components/SecondSection.astro';
+import ThirdSection from '../components/ThirdSection.astro';
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Welcome to Astro.">
+	<Header client:load />
+	<Menu client:load />
+	<FirstSection />
+	<SecondSection />
+	<ThirdSection />
+	<FourthSection />
+	<Contact />
+	<Footer />
+</Layout>

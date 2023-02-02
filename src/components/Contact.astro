@@ -1,0 +1,33 @@
+<section id="contact" class="bg-softBlue text-center py-10 flex flex-col gap-4">
+    <div class="flex flex-col gap-2">
+        <p class="text-lg tracking-widest text-white font-mono">35,000+ already joined</p>
+        <p class="text-2xl mx-5 text-white">
+            Stay up-to-date with what we’re doing
+        </p>
+    </div>
+    <form class="flex flex-col  w-80 mx-auto lg:flex-row lg:justify-center  lg:w-[600px]  lg:gap-6">
+        <div class="lg:w-[300px]">
+            <input type="email"  id='input-form' class="outline-none pl-7 py-3 rounded-md w-full" placeholder="Enter your email address" type="text" />
+            <span id="error" class="bg-softRed hidden text-white rounded-b-md"></span>
+        </div>
+        <button type="button" id="button-form" class="mt-5 px-10 py-2 text-lg border-2 lg:mt-0 border-softRed hover:text-softRed  transition-colors  hover:bg-white bg-softRed text-white rounded-md">Contact Us</button>
+    </form>
+</section>
+
+<script>
+    const input = document.querySelector('#input-form')
+    const button = document.querySelector('#button-form')
+    const error = document.querySelector('#error')
+    const validRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+    if (button) {
+        button.addEventListener('click', () => {
+            if (!input.value.match(validRegex)) {
+                error.style.display = 'block'
+                error.textContent = 'Whoops, make sure it`s an email'
+            } else {
+                error.style.display = 'none'
+                error.textContent = ''
+            }
+        })
+    }
+</script>
